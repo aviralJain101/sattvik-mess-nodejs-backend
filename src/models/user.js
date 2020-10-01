@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
         type:Number,
         required: true,
         validate(value){
-            if(value.toString().length!=6){
+            if(value.toString().length!=7){
                 throw new Error('Input a correct rollNo.')
             }
         }
@@ -55,7 +55,7 @@ const userSchema = new mongoose.Schema({
         type: Number,
         required: true,
         validate(value){
-            if(value.toString().length>3){
+            if(value.toString().length>4){
                 throw new Error('Enter a valid room no')
             }
         }
