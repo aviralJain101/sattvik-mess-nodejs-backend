@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
         type:Number,
         required: true,
         validate(value){
-            if(value.toString().length!=8){
+            if(value.toString().length!=6){
                 throw new Error('Input a correct rollNo.')
             }
         }
@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({
     password:{
         type:String,
         required:true,
-        minlength:7,
+        minlength:6,
         trim:true,
         validate(value){
             if(value.toLowerCase().includes('password')){
