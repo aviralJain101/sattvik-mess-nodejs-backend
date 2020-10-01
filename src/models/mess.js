@@ -14,7 +14,7 @@ const messSchema = new mongoose.Schema({
     },
     saturdayDiet:{type: Number, default:1.5},
     totalStudents:{type: Number},
-    notice:{type: String},
+    notice:{type: String, default: "Welcome to Satvik Mess"},
     menus:[{
         menu:{
             breakfast: {type: String},
