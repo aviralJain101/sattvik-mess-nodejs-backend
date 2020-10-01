@@ -9,7 +9,7 @@ mongoose.connect(process.env.MONGODB_URL,{
 })
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000 //locally runs on PORT 3000
 
 app.use(express.json) //converts incoming data from Json to javaScript object
 
