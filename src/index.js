@@ -11,7 +11,7 @@ mongoose.connect(process.env.MONGODB_URL,{
 const app = express()
 const port = process.env.PORT || 3000
 
-app.use(express.json)
+app.use(express.json) //converts incoming data from Json to javaScript object
 
 app.listen(port,()=>{
     console.log('server is up on port',port)
